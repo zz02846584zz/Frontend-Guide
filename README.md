@@ -13,7 +13,7 @@
 - HTTP 請求：[axios](https://github.com/mzabriskie/axios)
 - 模擬數據：[mock.js](http://mockjs.com/)
 - UI 組件庫：[Element](http://element.eleme.io/#/zh-CN/component/quickstart)
-- CSS 的預處理框架: [Tailwind CSS](https://tailwindcss.com/),[sass](http://sass.bootcss.com/)
+- CSS 的預處理框架: [Tailwind CSS](https://tailwindcss.com/), [sass](http://sass.bootcss.com/)
 - 資源加載打包工具：[Webpack](https://webpack.github.io/)
 - 程式風格規範：[eslint](http://eslint.org/), [stylelint](https://stylelint.io/)
 - 版本控制：[git](https://git-scm.com/), [GitLab](http://git.yinunite.com/)
