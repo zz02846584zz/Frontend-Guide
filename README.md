@@ -17,7 +17,7 @@
 - 資源加載打包工具：[Webpack](https://webpack.github.io/)
 - 程式風格規範：[eslint](http://eslint.org/), [stylelint](https://stylelint.io/)
 - 版本控制：[git](https://git-scm.com/), [GitLab](http://git.yinunite.com/)
-- 單元測試 (待引入)： [vue-test-utils](https://vue-test-utils.vuejs.org/zh-cn/)
+- 單元測試： [vue-test-utils](https://vue-test-utils.vuejs.org/zh-cn/)
 - 其他：[ES6](https://wohugb.gitbooks.io/ecmascript-6/content/index.html), [node.js](https://nodejs.org/en/), [npm](https://www.npmjs.com/), [alias](https://webpack.js.org/configuration/resolve/)
 
 ## 團隊管理工具
