@@ -49,8 +49,10 @@
 
    ```javascript
    // (錯誤)
-   function foo(element，a，b) {
-       element.onclick = function () { /* 使用變數 a 和 b */ }
+   function foo(element, a, b) {
+     element.onclick = function () {
+       /* 使用變數 a 和 b */
+     };
    }
    ```
 
@@ -58,11 +60,13 @@
    也保留了對閉包的引用，這就產生了循環引用，這就不能被 GC 回收. 這種情況下，可將程式重構為:
 
    ```javascript
-   function foo(element，a，b) {
-       element.onclick = handle(a，b);
+   function foo(element, a, b) {
+     element.onclick = handle(a, b);
    }
-   function handle(a，b) {
-       return function() { /* 使用變數 a 和 b */ };
+   function handle(a, b) {
+     return function () {
+       /* 使用變數 a 和 b */
+     };
    }
    ```
 
@@ -75,13 +79,14 @@
     * loader.destroy();
     */
    var ImageLoader = functiono(images) {
-     // binding onload event etc，
+     // binding onload event etc
      ...
 
      return {
        load: function() {
          ...
-       }，        destory: function() {
+       },
+       destory: function() {
          images.forEach(functiono() {
            img.onload = null;
            img = null;

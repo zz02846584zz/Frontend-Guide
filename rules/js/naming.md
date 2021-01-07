@@ -18,13 +18,13 @@
 
 3. 精簡短小，見名知意。變數名使用英文大小寫和數字命名，使用**駝峰命名**規則，例如: getStyle、addEvent。
 
-4. 不能使用沒有任何意義的變數名 (迴圈的指針變數除外，見下文 15)
+4. 不能使用沒有任何意義的變數名 (迴圈的指針變數除外，見下文 10)
 
    例如: var a = 1; var xx = true; 避免無意義的簡寫，例如: MouseEventHandler 寫作 MseEvtHdlr。
 
 5. `常數使用全大寫`作為變數名，多個單詞之間用下劃線(\_)分隔。例如: NAME_LIKE_THIS。
 
-6. `函數內保存 DOM 引用和定時器的變數，使用完後必須顯式銷毀`， 從而可以及時的執行內存回收。例如設置該變數為 null; 定時器變數銷毀，請執行 clearInterval 或者 clearTimeout。
+6. `函數內保存 DOM 引用和定時器的變數，使用完後必須顯式銷毀`，從而可以及時的執行內存回收。例如設置該變數為 null; 定時器變數銷毀，請執行 clearInterval 或者 clearTimeout。
 
 7. 私有化變數和方法名應該以下劃線 `_` 開頭 (僅限有跨作用域的變數或方法等).
 
@@ -54,10 +54,10 @@
 ### 變數賦值及定義
 
 1. 下面類型的物件不建議用 new 構造，是使用直接量賦值:
-   new Number，new String，new Boolean，new Object (用{}代替)，new Array(用[]代替)。
+   new Number、new String、new Boolean、new Object (用{}代替)、new Array(用[]代替)。
 
 2. 禁止陣列或者 JSON 中出現冗余的逗號，IE 下會拋出語法錯誤。
-   例如: var testArray = [1，，，; 或者 var jsonExample = { 'key1': value1，'key2': value2，;
+   例如: var testArray = [1, , , ]; 或者 var jsonExample = { 'key1': value1, 'key2': value2,;
 
 3. 禁止污染內置物件的原型，例如 Object.prototye、Array.prototype、Function.prototype。
 

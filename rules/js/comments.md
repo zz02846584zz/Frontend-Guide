@@ -15,7 +15,7 @@
     * @author Allex Wang
     * @module clib/lang
     */
-   define('lang'，function(require，exports，module) {
+   define('lang', function(require, exports, module) {
      ...
    });
    ```
@@ -64,10 +64,10 @@
     * @constructor
     * @extends {goog.Disposable}
     */
-   project.MyClass = function(arg1，arg2) {
-       // ...
+   project.MyClass = function (arg1, arg2) {
+     // ...
    };
-   goog.inherits(project.MyClass，goog.Disposable);
+   goog.inherits(project.MyClass, goog.Disposable);
    ```
 
 2. 方法與函數的註解
@@ -132,7 +132,10 @@
     * @enum {Number}
     */
    project.TriState = {
-     TRUE: 1，     FALSE: -1，     MAYBE: 0，   };
+     TRUE: 1,
+     FALSE: -1,
+     MAYBE: 0,
+   };
    ```
 
    注意一下，枚舉也具有有效類型，所以可以當成參數類型來用.
@@ -167,7 +170,7 @@
     * @param {String|Element|Text|Array} contents
     * @return {Element}
     */
-   goog.createElement = function(tagName，contents) {
+   goog.createElement = function(tagName, contents) {
        ...
    };
    ```
@@ -183,7 +186,7 @@
     * @param {goog.ElementContent} contents
     * @return {Element}
     */
-   goog.createElement = function(tagName，contents) {
+   goog.createElement = function(tagName, contents) {
        ...
    };
    ```
