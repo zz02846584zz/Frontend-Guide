@@ -51,6 +51,28 @@ Type 是用來告訴進行 Code Review 的人應該以什麼態度來檢視 Comm
 
 ---
 
+### 推薦範本
+
+```lang-none
+Header: \<type>(\<scope>): \<subject>
+
+問題：
+
+1.
+
+原因：
+
+1.
+
+調整項目：
+
+1.
+
+(<footer>)
+```
+
+---
+
 ### 範例 fix
 
 ```lang-none
