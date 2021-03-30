@@ -1,6 +1,17 @@
-# Git Commit Message 規範
+# Git 規範
 
-## Commit Message 規範範例
+## Branch 規範
+
+- master: 主線，只有主管或專案負責人有權限 merge。
+- develop: 開發人員分支，需要改code都從這裡開出去( hotfix 除外)。
+- feature: 新增/修改功能。
+- fix: 修補 bug。
+- refactor: 重構 (既不是新增功能，也不是修補 bug 的程式碼變動)。
+- hotfix: 熱修，正式服上的緊急修復，不併回主線。
+
+---
+
+## Git Commit Message 規範範例
 
 [example]: ./example.png 'Example'
 
@@ -28,7 +39,9 @@
   以 BREAKING CHANGE: 開頭，後面是對變動的描述、以及變動原因和遷移方法。
   type: subject 是簡述不要超過 50 個字元
 
-## type 只允許使用以下類別
+## Commit Message Type
+
+### Type 只允許使用以下類別
 
 - feat: 新增/修改功能 (feature)。
 - fix: 修補 bug (bug fix)。
